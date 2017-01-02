@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<html>
+<head>
+<script type="text/javascript">
+     function play()
+     {
+
+         var sounds = [
+        "1.m4a",
+        "2.m4a",
+	    "3.m4a",
+        "4.m4a",
+        "5.m4a",
+	    "6.m4a",        
+        "7.m4a",
+	    "8.m4a",
+        "9.m4a",
+        "10.m4a",
+        "11.m4a",
+        "12.m4a",
+        "13.m4a"];
+
+  var soundFile = sounds[Math.floor(Math.random()*sounds.length)];
+
+var a=new Audio(soundFile);
+         a.load();
+         a.play();
+     }
+</script>
+</head>
+<body bgcolor=black>
+<center><div onClick='play();' ><img src="http://fischer-automobile.de/support/bb/button.png"></div></center>
+</body>
+</html>
